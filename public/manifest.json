@@ -1,0 +1,33 @@
+{
+	"manifest_version": 3,
+	"name": "计量工单配表配箱插件",
+	"version": "20240117",
+	"description": "",
+	"permissions": [
+		"storage",
+		"cookies",
+		"notifications"
+	],
+	"action": {
+		"default_popup": "popup.html"
+	},
+	"host_permissions": [
+		"http://10.150.23.1:8010/*"
+	],
+	"web_accessible_resources": [
+		{
+			"resources": [
+				"static/*"
+			],
+			"matches": [
+				"http://*/*",
+				"https://*/*",
+				"chrome://extensions/*"
+			]
+		}
+	],
+	"content_scripts": [
+	],
+	"author": "JR",
+	"options_page": "index.html"
+}
